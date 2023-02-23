@@ -13,4 +13,7 @@ window.onload = function{
         scoreCounter: 0,
     }
 
+    score.innerText = rule.scoreCounter;
+
+
 }
