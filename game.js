@@ -50,4 +50,18 @@ window.onload = function{
         }
     });
 
+    for (var i = 0; i < walls.length; i++) {
+        walls[i].addEventListener('mouseover', function(){
+            if(rule.gameRunning){
+                score.innerText = rule.scoreCounter -= 10;
+                for (var i = 0; i < walls.length; i++){
+                    status.innerText = "You Lost :(";
+                    walls[i].classList.add("youlose");
+                    rule.gameRunning = false;
+                }
+            }
+        })
+        
+    };
+
 }
