@@ -32,4 +32,22 @@ window.onload = function{
         rule.gameRunning = true;
     });
 
+    end.addEventListener('mouseover', function(){
+        if (rule.inGame){
+            if(rule.gameRunning){
+                status.innerText = "You Won :)";
+                score.innerText = rule.scoreCounter += 5;
+                rule.gameRunning = false;
+            } else {
+                status.innerHTML = "Please go to the start point";
+            }
+        }else{
+            if(rule.gameRunning){
+                status.innerText = "Cought you cheating";
+                rule.gameRunning = false;
+                score.innerText = rule.scoreCounter -= 10;
+            }
+        }
+    });
+
 }
