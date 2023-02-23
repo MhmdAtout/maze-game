@@ -7,4 +7,10 @@ window.onload = function{
     var walls = document.querySelectorAll('.boundary');
     var end = document.getElementById('end');
 
+    var rule = {
+        gameRunning: false,
+        inGame: false,
+        scoreCounter: 0,
+    }
+
 }
