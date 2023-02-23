@@ -2,7 +2,7 @@ window.onload = function() {
 
     var status = document.getElementById('status');
     var map = document.getElementById('game');
-    var score = document.getElementById('score');
+    var score = document.getElementsByClassName('example')[0];
     var start = document.getElementById('start');
     var walls = document.querySelectorAll('.boundary');
     var end = document.getElementById('end');
