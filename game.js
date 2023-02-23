@@ -22,4 +22,9 @@ window.onload = function{
         rule.inGame = false;
     })
 
+    start.addEventListener('click', function(){
+        rule.scoreCounter = 0;
+        score.innerText = rule.scoreCounter;
+    })
+
 }
