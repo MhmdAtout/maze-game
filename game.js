@@ -30,6 +30,10 @@ window.onload = function{
     start.addEventListener('mouseover', function(){
         status.innerText = "Game Started :)";
         rule.gameRunning = true;
+
+        for (var i = 0; i < walls.length; i++) {
+            walls[i].classList.remove('youlose')
+        }
     });
 
     end.addEventListener('mouseover', function(){
