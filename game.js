@@ -27,4 +27,9 @@ window.onload = function{
         score.innerText = rule.scoreCounter;
     })
 
+    start.addEventListener('mouseover', function(){
+        status.innerText = "Game Started :)";
+        rule.gameRunning = true;
+    });
+
 }
