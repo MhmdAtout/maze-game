@@ -1,6 +1,6 @@
 # Maze Game
 ### Project Description
-- This project use the basics of java script to apply DOM
+- This project uses the basics of java script to apply DOM
 
 ### Languages
 - HTML
