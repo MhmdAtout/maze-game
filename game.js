@@ -1,4 +1,4 @@
-window.onload = function{
+window.onload = function() {
 
     var status = document.getElementById('status');
     var map = document.getElementById('game');
