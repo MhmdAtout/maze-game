@@ -15,5 +15,11 @@ window.onload = function{
 
     score.innerText = rule.scoreCounter;
 
+    map.addEventListener('mouseenter', function(){
+        rule.inGame = true;
+    })
+    map.addEventListener('mouseleave', function(){
+        rule.inGame = false;
+    })
 
 }
